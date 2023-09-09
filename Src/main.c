@@ -24,7 +24,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lvgl_dirver/lv_port_disp.h"
+#include "lvgl/lvgl.h"
+#include "lvgl/examples/lv_examples.h"
+#include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,23 +102,27 @@ int main(void)
   HAL_GPIO_WritePin(LCD_BACKLIGHT_GPIO_Port, LCD_BACKLIGHT_Pin, GPIO_PIN_SET);
 
   /*清屏*/
-  FillRect(0, 0, 1024, 600, 0xFFFF);
+  //FillRect(0, 0, 1024, 600, 0xFFFF);
 
   /* 绘制数据条*/
-  FillRect(380, 240, 40, 220,0x0f00);
-  FillRect(460, 200, 40, 260,0x0ef1);
-  FillRect(540, 160, 40, 300,0xf800);
-  FillRect(620, 120, 40, 340,0x001f);
+  //FillRect(380, 240, 40, 220,0x0f00);
+  //FillRect(460, 200, 40, 260,0x0ef1);
+  //FillRect(540, 160, 40, 300,0xf800);
+  //FillRect(620, 120, 40, 340,0x001f);
 
   /*绘制X轴*/
-  FillRect(340,  460, 360, 1,    0x0000);
+  //FillRect(340,  460, 360, 1,    0x0000);
+  lv_init();
+  lv_port_disp_init();
+  lv_demo_widgets();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      HAL_Delay(500);
+      HAL_Delay(3);
+      lv_task_handler();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

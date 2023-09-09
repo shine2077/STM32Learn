@@ -20,12 +20,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a560f8-a85f-402c-9805-27c95c4de506" name="Changes" comment="取消build文件夹">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lv_demos" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lvgl" afterDir="false" />
+    <list default="true" id="05a560f8-a85f-402c-9805-27c95c4de506" name="Changes" comment="添加lvgl config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +110,7 @@
       <workItem from="1694188655043" duration="196000" />
       <workItem from="1694230470367" duration="3974000" />
       <workItem from="1694244509604" duration="187000" />
-      <workItem from="1694246324006" duration="10905000" />
+      <workItem from="1694246324006" duration="15969000" />
     </task>
     <task id="LOCAL-00001" summary="调整矩形">
       <option name="closed" value="true" />
@@ -130,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694257649382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加lvgl">
+      <option name="closed" value="true" />
+      <created>1694258388594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694258388594</updated>
+    </task>
+    <task id="LOCAL-00004" summary="添加lvgl config">
+      <option name="closed" value="true" />
+      <created>1694258424675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694258424675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="调整矩形" />
     <MESSAGE value="取消build文件夹" />
-    <option name="LAST_COMMIT_MESSAGE" value="取消build文件夹" />
+    <MESSAGE value="添加lvgl" />
+    <MESSAGE value="添加lvgl config" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加lvgl config" />
   </component>
 </project>
