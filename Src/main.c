@@ -102,13 +102,13 @@ int main(void)
   FillRect(0, 0, 1024, 600, 0xFFFF);
 
   /* 绘制数据条*/
-  FillRect(380,  140,  40,  240,  0x001f);
-  FillRect(460, 160, 40,  220,  0x001f);
-  FillRect(540, 100,  40,  280,  0x001f);
-  FillRect(620, 120,  40,  260,  0x001f);
+  FillRect(380,  240,  40,  220,  0x001f);
+  FillRect(460, 200, 40,  260,  0x001f);
+  FillRect(540, 160,  40,  300,  0x001f);
+  FillRect(620, 120,  40,  340,  0x001f);
 
   /*绘制X轴*/
-  FillRect(340,  380, 380, 1,    0x0000);
+  FillRect(340,  460, 360, 1,    0x0000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
