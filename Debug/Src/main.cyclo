@@ -1,0 +1,4 @@
+../Src/main.c:58:6:FillRect	1
+../Src/main.c:69:5:main	1
+../Src/main.c:114:6:SystemClock_Config	4
+../Src/main.c:174:6:Error_Handler	1

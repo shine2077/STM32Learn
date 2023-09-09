@@ -1,0 +1,4 @@
+../Src/ltdc.c:30:6:MX_LTDC_Init	64	static
+../Src/ltdc.c:87:6:HAL_LTDC_MspInit	104	static
+../Src/ltdc.c:175:6:HAL_LTDC_MspDeInit	16	static
+../Src/ltdc.c:226:6:DMA2D_Fill	24	static
