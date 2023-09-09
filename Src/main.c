@@ -104,7 +104,7 @@ int main(void)
   /* 绘制数据条*/
   FillRect(380, 240, 40, 220,0x0f00);
   FillRect(460, 200, 40, 260,0x0ef1);
-  FillRect(540, 160, 40, 300,0x0030);
+  FillRect(540, 160, 40, 300,0xf800);
   FillRect(620, 120, 40, 340,0x001f);
 
   /*绘制X轴*/
@@ -115,12 +115,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      //HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
-      //HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
       HAL_Delay(500);
-      //HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
-      //HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
-      //HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
