@@ -1,3 +1,0 @@
-D:/STM32/STM32F429Cube/gui_demo/cmake-build-debug/CMakeFiles/gui_demo.elf.dir
-D:/STM32/STM32F429Cube/gui_demo/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/STM32/STM32F429Cube/gui_demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
