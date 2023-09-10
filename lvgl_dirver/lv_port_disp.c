@@ -50,5 +50,3 @@ void lv_port_disp_init(void)
     disp_drv.ver_res = 600;
     lv_disp_drv_register(&disp_drv);
 }
-
-
