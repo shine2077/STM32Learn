@@ -4,9 +4,6 @@
 #include "lv_port_indev.h"
 #include "touchpad/touchpad.h"
 
-//函数申明
-static void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data);
-
 //lvgl的输入设备初始化
 void lv_port_indev_init(void)
 {
@@ -20,10 +17,10 @@ void lv_port_indev_init(void)
 
 //将会被lvgl周期性调用,周期值是通过lv_conf.h中的LV_INDEV_DEF_READ_PERIOD宏来定义的
 //此值不要设置的太大,否则会感觉触摸不灵敏,默认值为30ms
-static void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data)
+void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data)
 {
-    static uint16_t last_x = 0;
-    static uint16_t last_y = 0;
+    static int16_t last_x = 0;
+    static int16_t last_y = 0;
 
     if(tp_dev.sta&TP_PRES_DOWN)//触摸按下了
     {

@@ -4,6 +4,33 @@
 #include "draw.h"
 #include "touchpad.h"
 
+const uint16_t POINT_COLOR_TBL[10]={RED,GREEN,BLUE,BROWN,GRED,BRED,GBLUE,LIGHTBLUE,BRRED,GRAY};
+
+void DrawPad()
+{
+    static uint8_t t = 0;
+    static uint16_t lastpos[10][2];
+    for(t=0;t<5;t++)
+    {
+        if((tp_dev.sta)&(1<<t))
+        {
+             if(tp_dev.x[t]<lcddev.width&&tp_dev.y[t]<lcddev.height)
+              {
+                 if(lastpos[t][0]==0XFFFF)
+                 {
+                     lastpos[t][0] = tp_dev.x[t];
+                     lastpos[t][1] = tp_dev.y[t];
+                 }
+                 DrawLine(lastpos[t][0],lastpos[t][1],tp_dev.x[t],tp_dev.y[t],2,POINT_COLOR_TBL[t]);//画线
+                 lastpos[t][0]=tp_dev.x[t];
+                 lastpos[t][1]=tp_dev.y[t];
+             }
+        }else {
+            lastpos[t][0]=0XFFFF;
+        }
+    }
+}
+
 void LTDC_Fill(uint16_t sx,uint16_t sy,uint16_t ex,uint16_t ey,uint32_t color)
 {
     uint32_t psx,psy,pex,pey;	//以LCD面板为基准的坐标系,不随横竖屏变化而变化

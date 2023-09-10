@@ -24,6 +24,7 @@
 #define GRAY  			 0X8430 //灰色
 #define LIGHTBLUE      	 0X7D7C
 
+void DrawPad();
 void LTDC_Fill(uint16_t sx,uint16_t sy,uint16_t ex,uint16_t ey,uint32_t color);
 void gui_draw_hline(uint16_t x0,uint16_t y0,uint16_t len,uint16_t color);
 void gui_fill_circle(uint16_t x0,uint16_t y0,uint16_t r,uint16_t color);

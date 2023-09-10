@@ -13,6 +13,8 @@ extern "C" {
 
 void lv_port_indev_init(void);
 
+void touchpad_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data);
+
 #ifdef __cplusplus
 }
 #endif

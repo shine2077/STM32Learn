@@ -20,18 +20,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a560f8-a85f-402c-9805-27c95c4de506" name="Changes" comment="移植lvgl显示">
-      <change afterPath="$PROJECT_DIR$/touchpad/draw.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/touchpad/draw.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/touchpad/gt9147.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/touchpad/gt9147.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/touchpad/touchpad.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_gui_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/OCD_gui_demo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="05a560f8-a85f-402c-9805-27c95c4de506" name="Changes" comment="添加触摸测试函数">
+      <change afterPath="$PROJECT_DIR$/lvgl_dirver/timer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lvgl_dirver/timer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lvgl_dirver/lv_port_indev.c" beforeDir="false" afterPath="$PROJECT_DIR$/lvgl_dirver/lv_port_indev.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lvgl_dirver/lv_port_indev.h" beforeDir="false" afterPath="$PROJECT_DIR$/lvgl_dirver/lv_port_indev.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/touchpad/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/touchpad/draw.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/touchpad/draw.h" beforeDir="false" afterPath="$PROJECT_DIR$/touchpad/draw.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
       <workItem from="1694246324006" duration="21446000" />
       <workItem from="1694270876670" duration="2919000" />
       <workItem from="1694276565094" duration="406000" />
-      <workItem from="1694313137604" duration="8146000" />
+      <workItem from="1694313137604" duration="14526000" />
     </task>
     <task id="LOCAL-00001" summary="调整矩形">
       <option name="closed" value="true" />
@@ -162,7 +160,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694265423744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加触摸测试函数">
+      <option name="closed" value="true" />
+      <created>1694324034656</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694324034656</updated>
+    </task>
+    <task id="LOCAL-00007" summary="添加触摸测试函数">
+      <option name="closed" value="true" />
+      <created>1694324046536</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694324046536</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,27 +197,7 @@
     <MESSAGE value="添加lvgl" />
     <MESSAGE value="添加lvgl config" />
     <MESSAGE value="移植lvgl显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="移植lvgl显示" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Src/main.c</url>
-          <line>85</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Src/main.c</url>
-          <line>92</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Src/main.c</url>
-          <line>108</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="添加触摸测试函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加触摸测试函数" />
   </component>
 </project>

@@ -22,21 +22,20 @@
 #include "gpio.h"
 #include "fmc.h"
 #include "touchpad/touchpad.h"
-#include "touchpad/draw.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "lvgl/lvgl.h"
+#include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
+#include "lvgl_dirver/timer.h"
 #include "lvgl_dirver/lv_port_disp.h"
 #include "lvgl_dirver/lv_port_indev.h"
-#include "lvgl/lvgl.h"
-#include "lvgl/examples/lv_examples.h"
-#include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
-#include "lv_demos/src/lv_demo_stress/lv_demo_stress.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-const uint16_t POINT_COLOR_TBL[10]={RED,GREEN,BLUE,BROWN,GRED,BRED,GBLUE,LIGHTBLUE,BRRED,GRAY};
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -100,6 +99,7 @@ int main(void)
   MX_GPIO_Init();
   MX_LTDC_Init();
   MX_FMC_Init();
+  TIM3_Init(999,89);							//定时器初始化(1ms中断),用于给lvgl提供心跳节拍
   /* USER CODE BEGIN 2 */
 
   /*开启屏幕背光*/
@@ -128,6 +128,7 @@ int main(void)
   {
       tp_dev.scan(0);
       lv_task_handler();
+      HAL_Delay(3);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
