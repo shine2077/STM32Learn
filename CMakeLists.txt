@@ -58,7 +58,7 @@ include_directories(Inc
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx)
 
-file(GLOB_RECURSE SOURCES "Startup/*.*" "Src/*.*" "Drivers/*.*" "lvgl/*.*" "lv_demos/*.*" "lvgl_dirver/*.*")
+file(GLOB_RECURSE SOURCES "Startup/*.*" "Src/*.*" "Drivers/*.*" "lvgl/*.*" "lv_demos/*.*" "lvgl_dirver/*.*" "touchpad/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F429IGTX_FLASH.ld)
 

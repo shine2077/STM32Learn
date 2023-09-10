@@ -20,10 +20,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a560f8-a85f-402c-9805-27c95c4de506" name="Changes" comment="添加lvgl config">
+    <list default="true" id="05a560f8-a85f-402c-9805-27c95c4de506" name="Changes" comment="移植lvgl显示">
+      <change afterPath="$PROJECT_DIR$/touchpad/draw.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/touchpad/draw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/touchpad/gt9147.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/touchpad/gt9147.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/touchpad/touchpad.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_gui_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/OCD_gui_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +71,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/STM32/STM32F429Cube/Demo",
+    "last_opened_file_path": "D:/STM32/STM32F429Cube/lvgl_demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,7 +117,10 @@
       <workItem from="1694188655043" duration="196000" />
       <workItem from="1694230470367" duration="3974000" />
       <workItem from="1694244509604" duration="187000" />
-      <workItem from="1694246324006" duration="15969000" />
+      <workItem from="1694246324006" duration="21446000" />
+      <workItem from="1694270876670" duration="2919000" />
+      <workItem from="1694276565094" duration="406000" />
+      <workItem from="1694313137604" duration="8146000" />
     </task>
     <task id="LOCAL-00001" summary="调整矩形">
       <option name="closed" value="true" />
@@ -144,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694258424675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="移植lvgl显示">
+      <option name="closed" value="true" />
+      <created>1694265423744</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694265423744</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +182,28 @@
     <MESSAGE value="取消build文件夹" />
     <MESSAGE value="添加lvgl" />
     <MESSAGE value="添加lvgl config" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加lvgl config" />
+    <MESSAGE value="移植lvgl显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="移植lvgl显示" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Src/main.c</url>
+          <line>85</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Src/main.c</url>
+          <line>92</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Src/main.c</url>
+          <line>108</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

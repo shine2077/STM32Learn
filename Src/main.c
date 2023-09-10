@@ -21,18 +21,22 @@
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
+#include "touchpad/touchpad.h"
+#include "touchpad/draw.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lvgl_dirver/lv_port_disp.h"
+#include "lvgl_dirver/lv_port_indev.h"
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
 #include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
+#include "lv_demos/src/lv_demo_stress/lv_demo_stress.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+const uint16_t POINT_COLOR_TBL[10]={RED,GREEN,BLUE,BROWN,GRED,BRED,GBLUE,LIGHTBLUE,BRRED,GRAY};
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -100,7 +104,7 @@ int main(void)
 
   /*开启屏幕背光*/
   HAL_GPIO_WritePin(LCD_BACKLIGHT_GPIO_Port, LCD_BACKLIGHT_Pin, GPIO_PIN_SET);
-
+  tp_dev.init();
   /*清屏*/
   //FillRect(0, 0, 1024, 600, 0xFFFF);
 
@@ -114,6 +118,7 @@ int main(void)
   //FillRect(340,  460, 360, 1,    0x0000);
   lv_init();
   lv_port_disp_init();
+  lv_port_indev_init();
   lv_demo_widgets();
   /* USER CODE END 2 */
 
@@ -121,7 +126,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      HAL_Delay(3);
+      tp_dev.scan(0);
       lv_task_handler();
     /* USER CODE END WHILE */
 
@@ -180,6 +185,8 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
+  HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 }
 
 /* USER CODE BEGIN 4 */
