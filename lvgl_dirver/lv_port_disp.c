@@ -37,11 +37,10 @@ static void disp_flush(lv_disp_drv_t * disp, const lv_area_t * area, lv_color_t 
 //lvgl显示接口初始化
 void lv_port_disp_init(void)
 {
-    static lv_color_t color_buf1[1024*20];
-    static lv_color_t color_buf2[1024*20];
+    static lv_color_t color_buf1[1024*30];
+    static lv_color_t color_buf2[1024*30];
     static lv_disp_draw_buf_t buf;
     lv_disp_draw_buf_init(&buf, color_buf1, color_buf2, 1024*20);
-
 
     lv_disp_drv_init(&disp_drv);
 
