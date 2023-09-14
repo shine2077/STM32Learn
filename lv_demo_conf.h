@@ -29,6 +29,8 @@
 #define LV_DEMO_WIDGETS_SLIDESHOW  0
 #endif
 
+#define LV_USE_DEMO_MUSIC 1
+
 /*Printer demo, optimized for 800x480*/
 #define LV_USE_DEMO_PRINTER     0
 

@@ -40,7 +40,7 @@ void lv_port_disp_init(void)
     static lv_color_t color_buf1[1024*30];
     static lv_color_t color_buf2[1024*30];
     static lv_disp_draw_buf_t buf;
-    lv_disp_draw_buf_init(&buf, color_buf1, color_buf2, 1024*20);
+    lv_disp_draw_buf_init(&buf, color_buf1, color_buf2, 1024*30);
 
     lv_disp_drv_init(&disp_drv);
 

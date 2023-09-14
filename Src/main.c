@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "lvgl/lvgl.h"
 #include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
+#include "lv_demos/src/lv_demo_music/lv_demo_music.h"
 #include "lvgl_dirver/timer.h"
 #include "lvgl_dirver/lv_port_disp.h"
 #include "lvgl_dirver/lv_port_indev.h"
@@ -119,7 +120,8 @@ int main(void)
   lv_init();
   lv_port_disp_init();
   lv_port_indev_init();
-  lv_demo_widgets();
+  //lv_demo_widgets();
+  lv_demo_music();
   /* USER CODE END 2 */
 
   /* Infinite loop */
